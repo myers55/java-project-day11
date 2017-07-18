@@ -75,7 +75,11 @@ var myString;
 var myBoolean;
 // This one's a little tricky - think carefully about what makes a value "undefined"!
 var myUndefined;
-// A:
+// A: 
+var myNumber = 5;
+var myString = "hello";
+var myBoolean = true;
+var myUndefined;
 
 
 // For questions 11 - 19: List which boolean value will be stored in each variable. (Remember: `==` does not check data type)
@@ -83,47 +87,47 @@ var myUndefined;
 // 11.
 var x = (false == 0);
 // A.
-
+false
 
 // 12.
 var y = (false == "");
 // A.
-
+false
 
 // 13.
 var z = (0 == "");
 // A.
-
+false
 
 // 14.
 var a = (null == null);
 // A.
-
+true
 
 // 25.
 var b = (undefined == undefined);
 // A.
-
+true
 
 // 16.
 var c = (undefined == null);
 // A.
-
+false
 
 // 17.
 var d = (null == false);
 // A.
-
+false
 
 // 18.
 var e = (NaN == null);
 // A.
-
+false
 
 // 19.
 var f = (NaN == NaN);
 // A.
-
+true
 
 // 20.
 // Fix the `if...else` statement below by adding an `if` keyword and conditional expression.
@@ -131,7 +135,7 @@ var f = (NaN == NaN);
 // A:
 var thirsty = true;
 
-{
+if(thirsty){
   console.log("I'm parched!");
 } else {
   console.log("I've had enough to drink.");
@@ -148,7 +152,7 @@ if(x){
 	console.log("False!");
 }
 // A:
-
+true
 
 // 22.
 if(""){
@@ -157,7 +161,7 @@ if(""){
 	console.log("False!");
 }
 // A:
-
+false
 
 // 23.
 // this expression will set x to NaN
@@ -169,7 +173,7 @@ if(x){
 	console.log("False!");
 }
 // A:
-
+false
 
 // 24.
 if(false){
@@ -178,6 +182,7 @@ if(false){
 	console.log("False!");
 }
 // A:
+false
 
 
 // 25.
@@ -187,7 +192,7 @@ if(-5 && 5){
 	console.log("False!");
 }
 // A:
-
+false
 
 // 26.
 if("Hello World!"){
@@ -196,7 +201,7 @@ if("Hello World!"){
 	console.log("False!");
 }
 // A:
-
+true
 
 // 27.
 if({}){
@@ -205,6 +210,7 @@ if({}){
 	console.log("False!");
 }
 // A:
+true
 
 
 // 28.
@@ -214,7 +220,7 @@ if({name: "Yehuda Katz"}){
 	console.log("False!");
 }
 // A:
-
+true
 
 // 29.
 if(new Date()){
@@ -223,7 +229,7 @@ if(new Date()){
 	console.log("False!");
 }
 // A:
-
+true
 
 // 30.
 // Link this file to the sibling `index.html` document, open the file in your browser and request an instructor.
